@@ -215,6 +215,9 @@ body{
     font-family: "Poppins";
 }
 .bodyText{
+    word-wrap: break-word;
+
+    text-justify: left;
     font-family: "Oxygen";
 }
 #ctabox{
@@ -274,6 +277,9 @@ body{
     font-weight: 900;
 }
 .cardBody{
+    word-wrap: break-word;
+    width: 520px;
+    text-justify: left;
     font-family: "Oxygen";
     font-weight: 500;
     font-size: 18px;

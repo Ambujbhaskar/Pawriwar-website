@@ -241,6 +241,9 @@ body {
   font-weight: 900;
 }
 .cardBody {
+  word-wrap: break-word;
+  width: 550px;
+  text-align: left;
   font-family: "Oxygen";
   font-weight: 500;
   font-size: 18px;
@@ -273,7 +276,8 @@ body {
   text-decoration: none;
 }
 #line1footer {
-  margin-top: 20.7rem;
+  position: relative;
+  margin-top: 23.15rem;
 }
 #bottomLeftBlob {
   margin-bottom: -159.2rem;
@@ -285,11 +289,11 @@ body {
   min-width: 100%;
   display: flex;
   justify-content: flex-end;
-  /* background-color: red; */
 }
 
 
 /* group of images for showcase*/
+
 .showcase{
   display: flex;
   justify-content: center;
@@ -297,15 +301,9 @@ body {
 #card3 {
   margin-bottom: 2rem;
   margin-top: 30rem;
-  /* margin-left: 8rem; */
-
-  /* justify-content: center; */
 }
 #card4 {
   margin-bottom: 5rem;
-  /* margin-left: 8rem; */
-
-  /* justify-content: center; */
 }
 #media3{
   margin-left: 1rem;
