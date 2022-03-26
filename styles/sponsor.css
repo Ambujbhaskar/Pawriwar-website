@@ -1,0 +1,308 @@
+/* ALL */
+
+*{
+    transition:all 0.5s ease-in-out;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+}
+.background{
+    position: absolute;
+    z-index: -30;
+}
+.front{
+    z-index: +10;
+}
+
+/* Navigation Bar */
+
+/* parent object - logo, daughter objects - symbol & logotype */
+#mainLogo{
+    display: inline;
+    padding-left: 9px;
+    grid-column: 1/2;
+    font-size: 48px;
+    vertical-align: middle;
+}
+#mainSymbol{
+    display: inline;
+    max-width: 100px;
+    max-height: 100px;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-top: 10px;  
+}
+#mainLogoType{
+    display: inline;
+    font-size: 36px;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 30px;
+    color: #004C87;
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+#mainLogoType:hover{
+    cursor: pointer;
+    color: #FAAE18;
+}
+
+.navBar{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+    min-width: 100%;
+    align-items: center;
+    min-height: 10rem;
+    /* justify-content: space-around; */
+}
+.navListBox{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    padding-right: 5rem;
+    text-decoration: none;
+    padding-left: 1.45rem;
+    list-style: none;
+    margin-left: 0.88rem;
+}
+.navList{
+    text-decoration: none;
+    color: #474654;
+    font-family: 'Poppins';
+    font-weight: 900;
+    display: inline;
+    margin: 30px;
+    /* margin-top: 10px; */
+    font-size: 16px;
+    text-decoration: none;
+    /* vertical-align: middle; */
+}
+.navList:hover{
+    color: #ff8a00;
+}
+
+#sponsor{
+    color: #004C87;
+}
+#sponsor:hover{
+    cursor:default;
+}
+
+
+/* top right blob */
+
+.blob{
+    position: absolute;
+    top: 0px;
+    z-index: -30;
+    min-width: 100%;
+    display: flex;
+    justify-content: end;
+}
+#toprightblob{
+    width: 530px;
+    height: 187px;
+
+    background-blend-mode: multiply;
+}
+
+/* heading text */
+
+.cardHeading{
+    display: block;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 900;
+    color: #474654;
+    margin-left: 7rem;
+}
+
+/* Donate Boxes */
+
+.donateCardsContainer{
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fa3218; */
+}
+.donateCard{
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+    width: 360px;
+    height: 460px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 8px #FFC7D7, 0px 4px 8px #00000025;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.cardContent{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+footer{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.donateCardImg{
+    width: 330px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 1rem;
+}
+.donateCardHeading{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.donateCardWriteup{
+    font-family: "Oxygen";
+    text-justify: left;
+    width: 300px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.donateCardButton{
+    width: 10rem;
+    height: 2.5rem;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    background-color: #ff8a00;
+    border-radius: 8px;
+    
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+
+    box-shadow: 0px 3px 3px #4746546b;
+
+    cursor: pointer;
+}
+.donateCardButton:hover{
+    background-color: #ffffff;
+    color: #ff8a00;
+}
+.donateCardButton:active{
+    transition: 0s;
+    background-color: #ffffff;
+    color: #ff8a00;
+    
+    box-shadow: inset 0px 3px 3px #4746546b;
+}
+
+
+/* card */
+
+.blob5{
+    position: absolute;
+    z-index: -60;
+    display: flex;
+    min-width: 100%;
+    justify-content: end;
+}
+#rightBlob{
+    margin-top: 40rem;
+    /* margin-left: 55rem; */
+    width: 600px;
+}
+
+#card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+}
+#cardContent{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 8rem;
+    margin-right: 4rem;
+}
+#cardHeading{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+#cardText{
+    font-family: "Oxygen";
+    font-weight: 500;
+    font-size: 18px;
+    text-justify: left;
+}
+.operationLink{
+    text-decoration: none;
+    color: #36b6d6;
+    font-weight: 600;
+}
+#cardImg{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 500px;
+}
+#milaapButton{
+    width: 12rem;
+    height: 2.5rem;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    background-color: #ff8a00;
+    border-radius: 8px;
+
+    /* margin-left: 1rem; */
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+    box-shadow: 0px 3px 3px #4746546b;
+
+    cursor: pointer;
+}
+#milaapButton:hover{
+    background-color: #ffffff;
+    color: #ff8a00;
+}
+#milaapButton:active{
+    transition: 0s;
+    background-color: #ffffff;
+    color: #ff8a00;
+    
+    box-shadow: inset 0px 3px 3px #4746546b;
+}
+
+
+/* footer */
+.footer{
+    font-family: "Oxygen";
+    display: flex;
+    justify-content: center;
+}
+.boldText{
+    font-weight: 700;
+    color: #36b6d6;
+    text-decoration: none;
+}
+#line1footer{
+    margin-top: 22rem;
+}
+#bottomBlob{
+    z-index: -50;
+    position: absolute;
+    margin-top: -17rem;
+}

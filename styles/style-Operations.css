@@ -7,6 +7,10 @@
 body {
   background-color: #ffffff;
 }
+.buttonLink{
+  text-decoration: none;
+}
+
 #mainLogo {
   display: inline;
   font-size: 48px;
@@ -95,31 +99,16 @@ body {
   padding-bottom: 20px;
 }
 #donateBtn:hover {
+  transition: 0s;
   box-shadow: 0px 4px 15px #ff8a00;
   color: #ffffff;
   background-color: #ff8a00;
   cursor: pointer;
 }
-
-#volunteerBtn {
-  font-size: 23px;
-  /* right: 10px; */
-  border-radius: 8px;
-  font-family: "Poppins";
-  font-weight: 700;
-  display: block;
-  margin-right: 0px;
-  margin-left: 185px;
-  color: #004c87;
-  background-color: #ffffff;
-  border: none;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#volunteerBtn:hover {
-  color: #ff8a00;
+#donateBtn:active{
+  box-shadow: 0px 4px 15px #ff880000;
+  color: #ffffff;
+  background-color: #ff8a00;
   cursor: pointer;
 }
 
@@ -251,6 +240,32 @@ body {
 .cardMediaContainer {
   border-radius: 8px;
 }
+
+
+/* Image film effect */
+
+/* .imgFilm{
+  transition: 2s;
+
+  position: absolute;
+  z-index: 10;
+  width: 600px;
+  height: 337.5px;
+  border-radius: 8px;
+
+  background: linear-gradient(0deg, rgba(2,0,36,0.7620798319327731) 0%, rgba(0,0,0,0.49317226890756305) 35%, rgba(0,0,0,0.23546918767507008) 69%, rgba(0,0,0,0) 100%);
+}
+.imgFilm:hover{
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 69%, rgba(0,0,0,0) 100%);
+}
+#film1{
+  margin-left: 50.4rem;
+  margin-top: 1.3rem;
+}
+#film2{
+  margin-left: 8rem;
+  margin-top: 1.3rem;
+} */
 #media1 {
   margin-right: 6rem;
 }
