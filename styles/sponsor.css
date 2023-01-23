@@ -20,62 +20,56 @@ body{
 /* Navigation Bar */
 
 /* parent object - logo, daughter objects - symbol & logotype */
-#mainLogo{
+#mainLogo {
     display: inline;
-    padding-left: 9px;
-    grid-column: 1/2;
-    font-size: 48px;
+    font-size: 2.5rem;
     vertical-align: middle;
-}
-#mainSymbol{
+  }
+  #mainSymbol {
     display: inline;
     max-width: 100px;
     max-height: 100px;
     vertical-align: middle;
     margin-left: 15px;
-    margin-top: 10px;  
-}
-#mainLogoType{
+    margin-top: 10px;
+  }
+  #mainLogoType {
     display: inline;
-    font-size: 36px;
+    font-size: 2.5rem;
     vertical-align: middle;
     padding-left: 10px;
     padding-top: 30px;
-    color: #004C87;
-    font-family: 'Poppins';
+    color: #004c87;
+    font-family: "Poppins";
     font-weight: bolder;
-}
-#mainLogoType:hover{
+  }
+  #mainLogoType:hover {
     cursor: pointer;
-    color: #FAAE18;
-}
-
-.navBar{
-
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    
+    color: #faae18;
+  }
+  .navBar {
+    /* position: fixed; */
+    display: flex;
     min-width: 100%;
     align-items: center;
+    /* background-color: red; */
     min-height: 10rem;
-    /* justify-content: space-around; */
-}
-.navListBox{
-    grid-column: 2/3;
+    justify-content: space-around;
+  }
+  .navListBox {
     display: flex;
     align-items: center;
     /* flex-direction: column; */
     justify-content: space-around;
-    padding-right: 5rem;
+    padding-left: 3.5rem;
     text-decoration: none;
-    padding-left: 1.45rem;
+    margin-left: 10px;
     list-style: none;
-    margin-left: 0.88rem;
-}
-.navList{
+  }
+  .navList {
     text-decoration: none;
     color: #474654;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: 900;
     display: inline;
     margin: 30px;
@@ -83,10 +77,34 @@ body{
     font-size: 16px;
     text-decoration: none;
     /* vertical-align: middle; */
-}
-.navList:hover{
+  }
+  .navList:hover {
     color: #ff8a00;
-}
+  }
+  
+  #sponsors {
+    color: #004c87;
+  }
+  #sponsors:hover {
+    cursor: default;
+  }
+  
+  #donateBtn {
+    font-size: 23px;
+
+    display: inline;
+    margin-right: 2rem;
+    margin-left: 175px;
+    
+    border: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    visibility: hidden;
+    cursor: default;
+  }
 
 #sponsor{
     color: #004C87;

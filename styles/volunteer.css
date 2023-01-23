@@ -64,7 +64,7 @@ body{
 
 #mainLogo{
     display: inline;
-    font-size: 48px;
+    font-size: 2.5rem;
     vertical-align: middle;
 }
 #mainSymbol{
@@ -77,7 +77,7 @@ body{
 }
 #mainLogoType{
     display: inline;
-    font-size: 36px;
+    font-size: 2.5rem;
     vertical-align: middle;
     padding-left: 10px;
     padding-top: 30px;
