@@ -12,12 +12,13 @@ body{
 }
 
 
-.topRightBlobWrapper{
-    min-width: 100%;
+/* background */
+#topRightBlobWrapper{
     position: absolute;
+    z-index: -30;
+    min-width: 100%;
     display: flex;
     justify-content: end;
-    z-index: -10;
 }
 #topRightBlob{
     width: 530px;
@@ -25,42 +26,32 @@ body{
     background-blend-mode: multiply;
 }
 
-
-.leftBlobWrapper{
+#pawsWrapper{
     position: absolute;
-    display: flex;
-    justify-content: start;
-    z-index: -10;
+    z-index: -20;
+    max-width: 100%;
 }
-#leftBlob{
-    margin-top: 34rem;
-    width: 580px;
+#paws{
+    margin-top: 6rem;
+    margin-left: 2.8rem;
+    width: 1400px;
 }
 
-
-.rightBlobWrapper{
+#rightBlobWrapper{
     position: absolute;
+    z-index: -40;
     min-width: 100%;
-    z-index: -10;
     display: flex;
     justify-content: end;
 }
 #rightBlob{
-    margin-top: 75rem;
-    width: 900px;
+    width: 550px;
+
+    margin-top: 52rem;
 }
 
 
-#paws{
-    margin-left: 3rem;
-    margin-top: 6rem;
-    z-index: -5;
-    position: absolute;
-}
-#pawsImg{
-    width: 1430px;
-}
-
+/* front  */
 
 #mainLogo{
     display: inline;
@@ -125,10 +116,10 @@ body{
 }
 
 
-#volunteer{
+#contactus{
     color: #004C87;
 }
-#volunteer:hover{
+#contactus:hover{
     cursor:default;
 }
 
@@ -164,141 +155,75 @@ body{
     cursor: pointer;
 }
 
-/* content */
 
-.writeup{
-    min-width: 100%;
-    display: grid;
-}
-#writeup1{
-    grid-template-columns: 1fr;
-    justify-content: center;
-}
+/* Content */
+
 .heading{
     font-family: "poppins";
     font-weight: 600;
     font-size: 36px;
 }
 #heading1{
-    text-align: center;
-    margin-top: 7rem;
-}
-.text{
-    font-family: "oxygen";
-    font-weight: 500;
-    font-size: 18px;
-}
-#text1{
-    margin-top: 2rem;
-    margin-left: 32rem;
-    margin-right: 32rem;
+    margin-top: 3rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
     text-align: center;
 }
-#writeup2{
-    margin-top: 28rem;
-    grid-template-rows: 100fr, 1fr;
-    justify-content: center;
+
+#contactCards{
+    margin-top: 3rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+    display: flex;
+    justify-content: space-around;
 }
-#whiteDogImg{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 550px;
+.contactCard{
+    width: 230px;
 }
-#text2{
-    margin-top: 2rem;
-    text-align: center;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-#writeup3{
-    margin-top: 15rem;
+
+.group{
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 1fr, 5fr;
-}
-#kidDogImg{
-    width: 600px;
-    margin-top: 5rem;
-    margin-right: 3rem;
-    margin-left: 7rem;
-    grid-row: 1/3;
-    grid-column: 1/2;
-}
-#heading3{
-    margin-top: 5rem;
-    margin-left: 5rem;
-    grid-row: 1/2;
-    grid-column: 2/3;
-}
-#text3{
-    margin-top: -10rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    grid-row: 2/3;
-    grid-column: 2/3;
+    grid-template-rows: 3.5fr 1fr;
 }
 
-#writeup4{
-    margin-top: 7rem;
-}
-#heading4{
-    display: flex;
-    justify-content: center;
-}
-#text4{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-#joinUsWrapper{
-    display: flex;
-    justify-content: center;
-}
-#joinUsButton{
+.cardButton{
     font-size: 23px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.253);
 
+    border-radius: 8px;
     font-family: 'Poppins';
     font-weight: 700;   
-    
-    margin-top: 2rem;
-    margin-right: 0px;
-    
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.253);
     color: #ffffff;
     background-color: #ff8a00;
+
     border: none;
-    
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+    width: 230px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-#joinUsButton:hover{
+.cardButton:hover{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.253);
     color: #ff8a00;
     background-color: #ffffff;
+
     cursor: pointer;
 }
-#joinUsButton:active{
+.cardButton:active{
     box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.253);
-    color: #ff8a00;
-    background-color: #ffffff;
-    cursor: pointer;
 }
-
-
-#bottomImgWrapper{
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
+.writeup{
+    font-family: "oxygen";
+    font-size: 18px;
+    display:flex;
 }
-#bottomImg{
-    width: 800px;
-    border-radius: 8px;
-    margin-top: 6rem;
+#writeup1{
+    text-align: left;
+    margin-top: 25rem;
+    margin-left: 20rem;
+    margin-right: 45rem;
 }
 
 
@@ -314,7 +239,7 @@ body{
     text-decoration: none;
 }
 #line1footer{
-    margin-top: 12rem;
+    margin-top: 22rem;
 }
 #bottomBlob{
     z-index: -50;

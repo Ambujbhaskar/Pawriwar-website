@@ -1,7 +1,7 @@
 /* ALL */
 
 *{
-    transition:all 0.5s ease-in-out;
+    transition:all 0.3s ease-in-out;
     margin: 0;
     border: none;
     padding: 0;
@@ -295,7 +295,7 @@ footer{
 }
 .boldText{
     font-weight: 700;
-    color: #36b6d6;
+    color: #3122a0;
     text-decoration: none;
 }
 #line1footer{
